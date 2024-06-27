@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Áreas</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: 180px 1fr; /* duas colunas*/
+        grid-template-rows: 50px 1fr 50px; /* 3 linhas*/
+        /* abaixo os nomes dos grid-area de cada classe*/
+        grid-template-areas:
+          "cabecalho cabecalho"
+          "menu conteudo"
+          "rodape rodape";
+
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      body > * {
+        border: solid cyan 3px;
+      }
+
+      header {
+        border-color: crimson;
+        grid-area: cabecalho;
+      }
+
+      nav {
+        border-color: chartreuse;
+        grid-area: menu;
+      }
+
+      main {
+        grid-area: conteudo;
+      }
+
+      footer {
+        border-color: deeppink;
+        grid-area: rodape;
+      }
+      @media (max-width: 600px) {
+        body {
+          grid-template-columns: 1fr; /* unica colunas*/
+          grid-template-rows: 50px 50px 1fr 50px; /* 4 linhas*/
+          /* abaixo os nomes dos grid-area de cada classe*/
+          grid-template-areas:
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "rodape";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Cabeçalho</header>
+    <nav>menu</nav>
+    <main>conteúdo</main>
+    <footer>Rodapé</footer>
+  </body>
+</html>

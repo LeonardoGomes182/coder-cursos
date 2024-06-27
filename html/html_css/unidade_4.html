@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unidade #04</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .externa {
+        background-color: orange;
+        height: 400px;
+        width: 400px;
+        padding: 50px;
+      }
+
+      .interna {
+        background-color: mediumvioletred;
+        height: 70%;
+        width: 70%;
+        position: static; /*conteudo  */
+        position: relative; /*conteudo  */
+        position: absolute; /*conteudo + padding  */
+        position: fixed; /*viewport  */
+        bottom: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="externa">
+      <div class="interna"></div>
+    </div>
+  </body>
+</html>

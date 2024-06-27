@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linha e Colunas</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .grid > div {
+      border: solid cyan 4px;
+      padding: 5px;
+      margin: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 50% 20% 30%;
+      grid-template-columns: repeat(6, 16.66%);
+      grid-template-columns: repeat(5, 16.66%) 16, 67%;
+      grid-template-columns: repeat(12, 8.33%);
+      grid-template-columns: repeat(11, 50px) 200px;
+      grid-template-columns: 200px 20% 1fr; /*1fr - pega o restante do espaço*/
+      grid-template-columns: 3fr 6fr 1fr; /* soma dos fraguimentos dividido pela largura da pag 3/10 6/10 1/10 */
+      grid-template-rows: 50% 25% 12.5% 12.5%;
+      grid-template-rows: 50px 1fr;
+      grid-template-rows: 200px auto auto auto;
+      grid-template-rows: 100px repeat(3, 1fr);
+
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+      <div class="div4">4</div>
+      <div class="div5">5</div>
+      <div class="div6">6</div>
+      <div class="div7">7</div>
+      <div class="div8">8</div>
+      <div class="div9">9</div>
+      <div class="div10">10</div>
+      <div class="div11">11</div>
+      <div class="div12">12</div>
+    </div>
+  </body>
+</html>

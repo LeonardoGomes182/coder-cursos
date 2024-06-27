@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 60px;
+      }
+      div {
+        padding: 30px;
+        border: solid 5px #ccc;
+      }
+
+      .static {
+        position: static;
+        background-color: dodgerblue;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: purple;
+      }
+
+      .relative {
+        position: relative;
+        top: 10px;
+        left: 25px;
+        background-color: forestgreen;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: red;
+      }
+
+      .sticky {
+        position: sticky;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">Estático (Padrao)</div>
+    <div class="fixed">Fixo</div>
+    <div class="relative">Relativo</div>
+    <div class="absolute">Absoluto</div>
+    <div class="relative">
+      Relativo
+      <div class="absolute">Absoluto</div>
+    </div>
+    <div class="sticky">sticky - Pegajoso</div>
+  </body>
+</html>
