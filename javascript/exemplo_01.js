@@ -1,1 +1,1 @@
-console.log("teste");
+console.log(10 /3);
