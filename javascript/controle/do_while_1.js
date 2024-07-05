@@ -3,7 +3,7 @@
 let quantidade = 0;
 const dataNoFuturo = Date.now() + 3000;
 
-while (Date.now() < dataNoFuturo) {
+do {
   quantidade++;
-}
+}while (Date.now() < dataNoFuturo)
 console.log("Qtade: ", quantidade);
