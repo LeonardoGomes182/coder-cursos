@@ -4,7 +4,8 @@ const bomDia = () => "Bom dia!";
 
 const boaTarde = () => "Boa tarde!";
 
-console.log(executar(bomDia));
+let resultado = executar(bomDia);
+console.log(resultado);
 
-let resultado = executar(boaTarde);
+resultado = executar(boaTarde);
 console.log(resultado);
